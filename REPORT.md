@@ -130,7 +130,7 @@ The trained model is served through a **Gradio** web application (`app/app.py`) 
 3. Returns the top-3 predicted classes with confidence scores.
 
 The app is hosted on **Hugging Face Spaces**, providing a public URL accessible from any
-browser. Live demo: {{HF_SPACE_URL}}
+browser. Live demo: https://huggingface.co/spaces/Raghuram04/plant-disease
 
 ## 7. Discussion
 

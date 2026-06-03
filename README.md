@@ -4,7 +4,7 @@ An end-to-end deep learning project that identifies **plant leaf diseases from a
 Upload a picture of a leaf and the model predicts whether the plant is healthy or which
 of 38 diseases it has — served as a live, shareable web app.
 
-> **Live demo:** _add your Hugging Face Space URL here after deploying_
+> **Live demo:** https://huggingface.co/spaces/Raghuram04/plant-disease
 > **Tech:** PyTorch · MobileNetV2 (transfer learning) · Gradio · Hugging Face Spaces
 
 ---

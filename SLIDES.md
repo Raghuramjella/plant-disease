@@ -44,7 +44,7 @@ points / what to say. Drop your accuracy numbers and a demo screenshot where mar
 ### Slide 8 — Live Demo
 - Screenshot of the Gradio app with a real prediction
 - **Demo it live if possible** (have the local app or HF Space open)
-- Link: {{HF_SPACE_URL}}
+- Link: https://huggingface.co/spaces/Raghuram04/plant-disease
 
 ### Slide 9 — Limitations & Future Work
 - Lab images vs. messy field photos
