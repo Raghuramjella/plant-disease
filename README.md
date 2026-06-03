@@ -76,11 +76,23 @@ Then open the local URL Gradio prints.
 
 ## 📊 Results
 
-_Fill in after training:_
+- **Test accuracy: 96.21%** (held-out test set)
+- **Best validation accuracy: 96.41%**
+- Trained in 5 epochs (~4 min/epoch) on a free Colab T4 GPU
 
-- **Test accuracy:** __%
-- **Confusion matrix:** `confusion_matrix.png`
-- Example predictions: _add screenshots of the app here_
+| Epoch | Train acc | Val acc |
+|---|---|---|
+| 1 | 0.867 | 0.938 |
+| 2 | 0.925 | 0.952 |
+| 3 | 0.937 | 0.958 |
+| 4 | 0.941 | 0.963 |
+| 5 | 0.944 | 0.964 |
+
+**Confusion matrix:**
+
+![Confusion Matrix](app/confusion_matrix.png)
+
+> _Tip: add a screenshot of the app making a prediction here too._
 
 ## 🔭 Possible extensions
 

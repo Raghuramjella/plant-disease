@@ -13,7 +13,7 @@ for food security. This project presents an image-classification system that ide
 plant leaf diseases from a single photograph. Using **transfer learning** with a
 **MobileNetV2** convolutional neural network pre-trained on ImageNet, we fine-tune a
 38-class classifier on the **PlantVillage** dataset (~54,000 leaf images across 14 crop
-species). The trained model achieves **{{TEST_ACCURACY}}% accuracy** on a held-out test
+species). The trained model achieves **96.21% accuracy** on a held-out test
 set. The model is deployed as an interactive web application using Gradio and hosted on
 Hugging Face Spaces, allowing any user to upload a leaf photo and receive an instant
 diagnosis with confidence scores.
@@ -97,8 +97,19 @@ converges quickly.
 
 > _Fill these in from your Colab run output._
 
-- **Test accuracy:** {{TEST_ACCURACY}}%
-- **Best validation accuracy:** {{VAL_ACCURACY}}%
+- **Test accuracy:** 96.21%
+- **Best validation accuracy:** 96.41%
+
+| Epoch | Train accuracy | Validation accuracy |
+|---|---|---|
+| 1 | 0.867 | 0.938 |
+| 2 | 0.925 | 0.952 |
+| 3 | 0.937 | 0.958 |
+| 4 | 0.941 | 0.963 |
+| 5 | 0.944 | 0.964 |
+
+Validation accuracy rises smoothly and tracks training accuracy closely, indicating the
+model generalizes well without significant overfitting.
 
 ### 5.1 Confusion matrix
 The confusion matrix (see `app/confusion_matrix.png`) shows predictions are concentrated

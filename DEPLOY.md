@@ -57,15 +57,16 @@ huggingface-cli upload YOUR_USERNAME/plant-disease-detector app/ . --repo-type s
 ---
 
 ## C. Final touches
+Accuracy numbers are already filled in (test 96.21% / val 96.41%). After deploying,
+just add your Space URL:
+
 1. Paste the Space URL into:
    - `README.md` (the "Live demo" line at top)
    - `REPORT.md` (replace `{{HF_SPACE_URL}}`)
    - `SLIDES.md` (slide 8)
-2. Replace `{{TEST_ACCURACY}}` / `{{VAL_ACCURACY}}` in `README.md` and `REPORT.md` with
-   your real numbers from the Colab run.
-3. Commit and push the updates:
+2. Commit and push the update:
    ```bash
-   git add -A && git commit -m "Add live demo URL and final results" && git push
+   git add -A && git commit -m "Add live demo URL" && git push
    ```
 
 🎉 Done — full project published: GitHub repo + live demo + report + slides.

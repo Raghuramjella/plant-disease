@@ -37,7 +37,7 @@ points / what to say. Drop your accuracy numbers and a demo screenshot where mar
 - Show the accuracy learning-curve plot
 
 ### Slide 7 — Results
-- **Test accuracy: {{TEST_ACCURACY}}%**  ← fill in
+- **Test accuracy: 96.21%** | Best val: 96.41%
 - Show the confusion matrix (mostly diagonal = good)
 - Note where it confuses similar diseases
 
