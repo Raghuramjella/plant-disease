@@ -97,7 +97,7 @@ demo = gr.Interface(
         "Model: MobileNetV2 fine-tuned on PlantVillage. "
         "For best results use a clear, well-lit photo of a single leaf."
     ),
-    allow_flagging="never",
+    flagging_mode="never",
 )
 
 if __name__ == "__main__":
