@@ -52,20 +52,21 @@ cells.append(code(
 cells.append(md(
     "## Step 2 — Download the PlantVillage dataset (via Kaggle)",
     "",
-    "**Get your Kaggle token (one time):**",
-    "1. Go to [kaggle.com](https://www.kaggle.com/) → your profile → **Settings**.",
-    "2. Scroll to **API** → click **Create New Token**. This downloads `kaggle.json`.",
-    "3. Run the cell below and upload that `kaggle.json` file when prompted.",
+    "**You need two things from Kaggle:**",
+    "1. **Username** — shown in your profile URL: `kaggle.com/YOUR_USERNAME`.",
+    "2. **API key/token** — go to [kaggle.com](https://www.kaggle.com/) → profile → **Settings**",
+    "   → **API** → **Create New Token**. This is the secret key string.",
+    "",
+    "The cell below asks for both (the key is typed in hidden) and sets them as",
+    "environment variables — no `kaggle.json` file required.",
 ))
 cells.append(code(
-    "# Upload your kaggle.json when prompted",
-    "from google.colab import files",
-    "uploaded = files.upload()  # select kaggle.json",
-    "",
-    "os.makedirs('/root/.kaggle', exist_ok=True)",
-    "!cp kaggle.json /root/.kaggle/kaggle.json",
-    "!chmod 600 /root/.kaggle/kaggle.json",
+    "# Enter your Kaggle credentials (key input is hidden)",
+    "import getpass",
+    "os.environ['KAGGLE_USERNAME'] = input('Kaggle username: ').strip()",
+    "os.environ['KAGGLE_KEY'] = getpass.getpass('Kaggle API key (hidden): ').strip()",
     "!pip install -q kaggle",
+    "print('Credentials set for user:', os.environ['KAGGLE_USERNAME'])",
 ))
 cells.append(code(
     "# Download + unzip the PlantVillage dataset (~2 GB). Takes a few minutes.",
