@@ -1,0 +1,24 @@
+# Datasets & large artifacts
+data/
+*.zip
+*.pt
+*.pth
+*.h5
+*.onnx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Keep model/data folders in the tree but ignore their contents
+!models/.gitkeep

@@ -1,0 +1,9 @@
+# Local development (the training notebook runs on Colab and installs its own deps).
+# Use this to run the Gradio app locally after training.
+torch>=2.0.0
+torchvision>=0.15.0
+gradio>=4.0.0
+pillow
+numpy
+matplotlib
+scikit-learn
